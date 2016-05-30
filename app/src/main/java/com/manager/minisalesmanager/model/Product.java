@@ -5,9 +5,7 @@ import java.math.BigDecimal;
 /**
  * Created by charloq on 13/05/16.
  */
-public class Product {
-    private String id;
-    private String description;
+public class Product extends Entity{
     private BigDecimal price;
     private String barCode;
 
@@ -21,22 +19,6 @@ public class Product {
 
     public void setBarCode(String barCode) {
         this.barCode = barCode;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public BigDecimal getPrice() {

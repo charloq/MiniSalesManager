@@ -6,18 +6,9 @@ import java.util.List;
 /**
  * Created by charloq on 14/05/16.
  */
-public class Operation {
-    private String id;
+public class Operation extends Entity{
     private List<Product> productList;
     private BigDecimal amount;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public List<Product> getProductList() {
         return productList;

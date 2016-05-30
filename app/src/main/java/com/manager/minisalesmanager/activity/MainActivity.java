@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.manager.minisalesmanager.R;
+import com.manager.minisalesmanager.dao.DataBaseHandler;
+
+import java.math.BigDecimal;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DataBaseHandler db = new DataBaseHandler(this);
+        db.addProduct("un producto", new BigDecimal(123), "123456789");
     }
 
     public void goToProducts(View view) {

@@ -19,5 +19,9 @@
     <string name="title_activity_sales">SalesActivity</string>
     <string name="title_activity_products">ProductsActivity</string>
     <string name="title_activity_purchases">PurchasesActivity</string>
-
+    <string name="action_add">Agregar</string>
+    <string name="empty">Sin Datos</string>
+    <string name="description">Descripción</string>
+    <string name="barCode">Código</string>
+    <string name="price">Precio</string>
 </resources>
