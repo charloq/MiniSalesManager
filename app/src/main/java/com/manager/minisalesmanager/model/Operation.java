@@ -1,6 +1,7 @@
 package com.manager.minisalesmanager.model;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ import java.util.List;
 public class Operation extends Entity{
     private List<Product> productList;
     private BigDecimal amount;
+    private Date date;
 
     public List<Product> getProductList() {
         return productList;
@@ -24,5 +26,13 @@ public class Operation extends Entity{
 
     public void setAmount(BigDecimal amount) {
         this.amount = amount;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

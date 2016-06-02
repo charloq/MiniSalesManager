@@ -7,7 +7,7 @@
     <string name="action_sign_in">Entrar</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">El email ingresado no es valido</string>
-    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_password">La contraseña es demaciado corta</string>
     <string name="error_incorrect_password">La contraseña es incorrecta</string>
     <string name="error_field_required">Este campo es requerido</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
@@ -25,4 +25,5 @@
     <string name="barCode">Código</string>
     <string name="price">Precio</string>
     <string name="amount">Monto</string>
+    <string name="error_fields_required">Los campos son requeridos</string>
 </resources>

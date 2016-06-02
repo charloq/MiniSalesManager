@@ -18,10 +18,11 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
         <activity
             android:name=".activity.SalesActivity"
             android:label="@string/title_activity_sales"
@@ -35,7 +36,8 @@
             android:label="@string/title_activity_purchases"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ScannerActivity" />
-        <activity android:name=".activity.AddProductActivity"></activity>
+        <activity android:name=".activity.AddProductActivity" />
+        <activity android:name=".activity.ProductDetailActivity"></activity>
     </application>
 
 </manifest>

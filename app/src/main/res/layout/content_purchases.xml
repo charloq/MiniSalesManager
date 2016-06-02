@@ -16,32 +16,18 @@
             android:id="@id/description"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="left"
+            android:layout_weight="8"
             android:hint="@string/description"
-            android:padding="@dimen/fab_margin" />
+            android:padding="10dp" />
 
         <TextView
             android:id="@id/amount"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="right"
+            android:layout_weight="2"
             android:hint="@string/amount"
-            android:padding="@dimen/fab_margin" />
+            android:padding="10dp" />
 
     </LinearLayout>
-
-
-    <!--<TextView-->
-    <!--android:id="@id/android:empty"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="@string/empty" />-->
-
-
-    <!--<TextView
-        android:id="@id/barCode"
-        android:hint="@string/barCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>-->
 
 </LinearLayout>
