@@ -46,14 +46,6 @@ public class ProductAdapter extends ArrayAdapter<Product> {
         txtBarCode.setText(actualProduct.getBarCode());
         txtDescription.setText(actualProduct.getDescription());
         txtPrice.setText(Utils.currencyFormat(actualProduct.getPrice()));
-/*
-        layoutProduct.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentProductsData = new Intent(layoutProduct.getContext(), ProductDetailActivity.class);
-                layoutProduct.startActivity(intentProductsData);
-            }
-        });*/
         return layoutProduct;
     }
 }

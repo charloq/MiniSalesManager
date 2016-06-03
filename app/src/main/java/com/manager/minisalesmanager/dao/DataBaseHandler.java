@@ -20,7 +20,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
 
     public String getSQLCreate() {
         StringBuilder sqlCreate = new StringBuilder();
-        sqlCreate.append("CREATE TABLE PRODUCTS (ID INTEGER NOT NULL, DESCRIPTION TEXT, PRICE REAL, BARCODE TEXT, PRIMARY KEY(ID));");
+        sqlCreate.append("CREATE TABLE PRODUCTS (ID INTEGER NOT NULL, DESCRIPTION TEXT, PRICE REAL, BARCODE TEXT UNIQUE, PRIMARY KEY(ID));");
         return sqlCreate.toString();
     }
 
@@ -41,11 +41,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-//NOTA: Por simplicidad del ejemplo aquí utilizamos directamente la opción de
-        //      eliminar la tabla anterior y crearla de nuevo vacía con el nuevo formato.
-        //      Sin embargo lo normal será que haya que migrar datos de la tabla antigua
-        //      a la nueva, por lo que este método debería ser más elaborado.
-
+        //TODO: Modificar para que se haga backup de la base anterior
         //Se elimina la versión anterior de la tabla
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS PRODUCTS");
 
@@ -54,8 +50,10 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     }
 
     public long addProduct(String description, BigDecimal price, String barCode) {
+        long result;
         ProductDAO dao = ProductDAO.getInstance(this.getWritableDatabase());
-        return dao.insertProduct(description, price, barCode);
+        result = dao.insertProduct(description, price, barCode);
+        return result;
     }
 
     public ArrayList<Product> getProducts() {

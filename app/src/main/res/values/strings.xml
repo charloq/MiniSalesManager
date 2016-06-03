@@ -16,9 +16,9 @@
     <string name="action_products">Productos</string>
     <string name="action_sales">Ventas</string>
     <string name="action_purchases">Compras</string>
-    <string name="title_activity_sales">SalesActivity</string>
-    <string name="title_activity_products">ProductsActivity</string>
-    <string name="title_activity_purchases">PurchasesActivity</string>
+    <string name="title_activity_sales">Ventas</string>
+    <string name="title_activity_products">Productos</string>
+    <string name="title_activity_purchases">Compras</string>
     <string name="action_add">Agregar</string>
     <string name="empty">Sin Datos</string>
     <string name="description">Descripción</string>
@@ -26,4 +26,7 @@
     <string name="price">Precio</string>
     <string name="amount">Monto</string>
     <string name="error_fields_required">Los campos son requeridos</string>
+    <string name="error_adding_product">No se ha podido agregar el producto requerido.</string>
+    <string name="title_activity_add_product">Agregar producto</string>
+    <string name="title_activity_detail_product">Producto</string>
 </resources>

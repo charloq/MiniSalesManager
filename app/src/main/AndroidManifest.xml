@@ -36,8 +36,10 @@
             android:label="@string/title_activity_purchases"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ScannerActivity" />
-        <activity android:name=".activity.AddProductActivity" />
-        <activity android:name=".activity.ProductDetailActivity"></activity>
+        <activity android:name=".activity.AddProductActivity"
+            android:label="@string/title_activity_add_product"/>
+        <activity android:name=".activity.ProductDetailActivity"
+            android:label="@string/title_activity_detail_product"></activity>
     </application>
 
 </manifest>

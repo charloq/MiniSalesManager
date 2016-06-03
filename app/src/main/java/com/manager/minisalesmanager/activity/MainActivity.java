@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DataBaseHandler db = new DataBaseHandler(this);
+        //TODO: Agrego para mostrar ejemplo, QUITAR.
         db.addProduct("un producto", new BigDecimal(123), "123456789");
     }
 
@@ -36,4 +37,5 @@ public class MainActivity extends AppCompatActivity {
         this.startActivity(intent);
     }
 
+    //TODO: Ver como manejar el boton atras para que se minimice la aplicacion
 }
